@@ -42,7 +42,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import ImageModal from '../components/ImageModal.vue';
 
 import formacionImg from '@/assets/images/formacion.jpg';
@@ -54,6 +54,10 @@ import recepcionLateralPaso2Img from '@/assets/images/recepcion-lateral-paso-2.j
 import segundoToqueCentralImg from '@/assets/images/segundo-toque-central.jpg';
 import segundoToqueLateralImg from '@/assets/images/segundo-toque-lateral.jpg';
 import ultimoToqueImg from '@/assets/images/ultimo-toque.jpg';
+
+onMounted(() => {
+  document.title = "Guía de Juego | SixSports";
+})
 
 const options = [
   {

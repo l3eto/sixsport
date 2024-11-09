@@ -1,7 +1,3 @@
-<script setup>
-  import FeatureItem from '../components/FeatureItem.vue'
-</script>
-
 <template>
   <div class="grid md:grid-cols-2 p-4 md:p-0 min-h-inherit">
     <div class="md:flex md:items-center md:ml-8 md:mr-16 gap-4 my-10 md:my-0">
@@ -61,3 +57,12 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import FeatureItem from '../components/FeatureItem.vue'
+import { ref, computed, onMounted } from 'vue';
+
+onMounted(() => {
+  document.title = "SixSports";
+})
+</script>
