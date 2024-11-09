@@ -8,7 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <img alt="SixSport" class="invert h-8" src="@/assets/sixsport_horizontal.svg" />
     </RouterLink>
     <div class="flex gap-4">
-      <RouterLink class="hover:bg-[#e79d52] hover:bg-opacity-10" active-class="text-[#e79d52]" to="/">Home</RouterLink>
+      <RouterLink class="hover:bg-[#e79d52] hover:bg-opacity-10" active-class="text-[#e79d52]" to="/">Inicio</RouterLink>
       <RouterLink class="hover:bg-[#e79d52] hover:bg-opacity-10" active-class="text-[#e79d52]" to="/guide">Guia de Juego</RouterLink>
     </div>
   </header>
